@@ -1,6 +1,6 @@
-# One Month Rails
+# Learning to use Rails: One Month Rails course
 
-This is the pinteresting sample application for 
+I'm building a sample application using
 [*One Month Rails*](http://onemonthrails.com)
 
-by [Titiaan Palazzi](http://titiaanpalazzi.com)
+If you want to learn more about my work, go to [Titiaan Palazzi](http://titiaanpalazzi.com)
