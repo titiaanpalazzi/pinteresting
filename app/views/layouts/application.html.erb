@@ -11,6 +11,11 @@
 	
 	<%= render 'layouts/header' %>
 	<div class="container">
+<!-- 		You don't include an equal sign after the percentage, because you don't want the message to be shown
+ -->		
+ 		<% flash.each do |name, msg| %>
+ 			<%= content_tag(:div, msg, class: "alert alert-info") %>
+ 		<% end %>
 		<%= yield %>
 	</div>
 
