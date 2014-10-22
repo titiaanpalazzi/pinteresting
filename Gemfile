@@ -22,6 +22,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass'
 # Devise gem
 gem 'devise', '~> 3.1.0.rc2'
+# Paperclip gem
+gem 'paperclip', github: 'thoughtbot/paperclip'
 
 group :development, :test do
 	gem 'sqlite3'
