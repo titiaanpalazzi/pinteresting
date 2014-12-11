@@ -12,12 +12,24 @@
   <% end %>
 
   <div class="form-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+   <div class="form-group">
+    <%= f.label :author %>
+    <%= f.text_field :author, class: "form-control" %>
+  </div>
+  <div class="form-group">
     <%= f.label :image %>
     <%= f.file_field :image, class: "form-control" %>
   </div>
   <div class="form-group">
+    <%= f.label :rating %>
+    <%= f.text_field :rating, class: "form-control" %>
+  </div>
+  <div class="form-group">
     <%= f.label :description %>
-    <%= f.text_field :description, class: "form-control" %>
+    <%= f.text_area :description, size: "60*12", class: "form-control" %>
   </div>
   <div class="form-group">
     <%= f.submit class: "btn btn-primary" %>

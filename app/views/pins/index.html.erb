@@ -3,13 +3,13 @@
   <!-- The line below allows us to call pin. in stead of @pins -->
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
-      <%= image_tag pin.image.url(:medium) %>
-      <%= pin.description %>
-      <%= pin.user.email if pin.user %>
-      <%= link_to 'Show', pin_path(pin) %>
+      <%= link_to image_tag(pin.image.url(:medium)), pin_path(pin)  %>
       <% if pin.user == current_user %>
-        <%= link_to 'Edit', edit_pin_path(pin) %>
-        <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <div class="actions">
+          <%= link_to 'Show', pin_path(pin) %>
+          <%= link_to 'Edit', edit_pin_path(pin) %>
+          <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </div>
       <% end %>
     </div>
   <% end %>
