@@ -16,4 +16,6 @@
 //= require turbolinks
 //= require jquery.turbolinks
 //= require masonry/jquery.masonry
+//= require markitup
+//= require markitup/sets/markdown/set
 //= require_tree .

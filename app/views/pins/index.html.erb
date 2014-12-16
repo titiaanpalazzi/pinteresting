@@ -1,3 +1,18 @@
+<%= render 'pages/home' unless user_signed_in? %>
+
+<div align="center">Sort by:
+<button type="button" class="btn btn-default">
+  <%= link_to "Highest rating", :sort => "rating DESC" %>
+</button>
+<button type="button" class="btn btn-default">
+  <%= link_to "Most recent", :sort => "created_at DESC" %>
+</button>
+<button type="button" class="btn btn-default">
+  <%= link_to "Title", :sort => "title" %>
+</button>
+</div>
+
+
 <!-- "transitions-enabled" makes the boxes slide over -->
 <div id="pins" class="transitions-enabled">
   <!-- The line below allows us to call pin. in stead of @pins -->

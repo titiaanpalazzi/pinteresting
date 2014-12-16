@@ -30,6 +30,8 @@ gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk', '~> 1.57.0'
 # Masonry rails package
 gem 'masonry-rails', '~> 0.2.0'
+# Integrated markitup to create smarter textboxes
+gem 'markitup-rails'
 
 group :development, :test do
 	gem 'sqlite3'
